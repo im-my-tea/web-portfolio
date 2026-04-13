@@ -21,7 +21,7 @@ export const certifications: Certification[] = [
     status: "earned",
   },
   {
-    name: "Terraform Associate (003)",
+    name: "Terraform Associate (004)",
     issuer: "HashiCorp",
     status: "earned",
   },
