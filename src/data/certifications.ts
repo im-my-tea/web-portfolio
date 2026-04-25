@@ -16,13 +16,13 @@ export const certifications: Certification[] = [
     status: "earned",
   },
   {
-    name: "Claude Certification (x2)",
+    name: "Claude with AWS Bedrock and Vertex AI",
     issuer: "Anthropic",
     status: "earned",
   },
   {
     name: "Terraform Associate (004)",
     issuer: "HashiCorp",
-    status: "earned",
+    status: "expected",
   },
 ];
