@@ -36,6 +36,10 @@ yarn-error.log*
 # python
 .venv/
 
+# claude
+.claude/
+CLAUDE.md
+
 # vercel
 .vercel
 
