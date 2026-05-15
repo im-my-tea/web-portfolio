@@ -1,3 +1,4 @@
+import { ExternalLink } from "lucide-react";
 import { SectionWrapper } from "./SectionWrapper";
 import { certifications } from "@/data/certifications";
 
@@ -10,11 +11,22 @@ export function Certifications() {
             key={cert.name}
             className="bg-surface border border-border rounded-lg p-5 flex items-start justify-between"
           >
-            <div>
+            <div className="min-w-0">
               <p className="font-mono text-sm text-foreground mb-1">
                 {cert.name}
               </p>
-              <p className="text-xs text-text-muted">{cert.issuer}</p>
+              <p className="text-xs text-text-muted mb-2">{cert.issuer}</p>
+              {cert.verifyUrl && (
+                <a
+                  href={cert.verifyUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1 font-mono text-xs text-accent hover:text-accent-dim transition-colors"
+                >
+                  <span>🔗 verify</span>
+                  <ExternalLink size={11} />
+                </a>
+              )}
             </div>
             <span
               className={`shrink-0 ml-3 text-xs font-mono px-2 py-0.5 rounded ${
