@@ -11,18 +11,13 @@ export const certifications: Certification[] = [
     status: "earned",
   },
   {
+    name: "HashiCorp Terraform Associate (004)",
+    issuer: "HashiCorp",
+    status: "earned",
+  },
+  {
     name: "Azure AI Fundamentals (AI-900)",
     issuer: "Microsoft",
     status: "earned",
-  },
-  {
-    name: "Claude with AWS Bedrock and Vertex AI",
-    issuer: "Anthropic",
-    status: "earned",
-  },
-  {
-    name: "Terraform Associate (004)",
-    issuer: "HashiCorp",
-    status: "expected",
   },
 ];

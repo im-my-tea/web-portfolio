@@ -16,10 +16,19 @@ export function Hero() {
           Cloud &amp; Platform Engineer
           <span className="animate-blink ml-1">_</span>
         </div>
-        <p className="text-text-muted text-base md:text-lg max-w-xl mx-auto mb-10">
+        <p className="text-text-muted text-base md:text-lg max-w-xl mx-auto mb-8">
           <span className="font-mono text-accent/60">$ </span>
-          Building resilient infrastructure on AWS, GCP, and Azure.
+          Building production infrastructure on AWS, GCP, and Azure. Live
+          projects below.
         </p>
+        <div className="mb-10">
+          <a
+            href="#projects"
+            className="inline-block font-mono text-sm text-accent border border-accent/40 rounded px-5 py-2 hover:bg-accent/10 transition-colors"
+          >
+            See projects →
+          </a>
+        </div>
         <div className="flex items-center justify-center gap-6">
           <a
             href={social.github}

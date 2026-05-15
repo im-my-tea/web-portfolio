@@ -4,41 +4,43 @@ import "./globals.css";
 import { Navbar } from "@/components/Navbar";
 
 const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
+    variable: "--font-inter",
+    subsets: ["latin"],
 });
 
 const jetbrainsMono = JetBrains_Mono({
-  variable: "--font-jetbrains-mono",
-  subsets: ["latin"],
+    variable: "--font-jetbrains-mono",
+    subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-  title: "Ayush Maiti — Cloud & Platform Engineer",
-  description:
-    "Portfolio of Ayush Maiti — Cloud & Platform Engineer specializing in AWS, GCP, Azure, Terraform, Kubernetes, and Python automation.",
-  openGraph: {
+    metadataBase: new URL("https://web-portfolio-one-ivory.vercel.app"),
     title: "Ayush Maiti — Cloud & Platform Engineer",
     description:
-      "Cloud-native infrastructure, IaC, and reliable system design across AWS, GCP, and Azure.",
-    type: "website",
-  },
+        "Cloud & Platform Engineer with ~3 years across product delivery and infrastructure work. Production services on AWS and GCP — FastAPI on Cloud Run, Terraform multi-environment infra, GitHub Actions CI/CD with promotion gates.",
+    openGraph: {
+        title: "Ayush Maiti — Cloud & Platform Engineer",
+        description:
+            "Production cloud infrastructure on AWS and GCP. Every project deployed, public, and walk-through-able end to end.",
+        url: "https://web-portfolio-one-ivory.vercel.app",
+        type: "website",
+    },
 };
 
 export default function RootLayout({
-  children,
+    children,
 }: Readonly<{
-  children: React.ReactNode;
+    children: React.ReactNode;
 }>) {
-  return (
-    <html
-      lang="en"
-      className={`${inter.variable} ${jetbrainsMono.variable} antialiased`}
-    >
-      <body>
-        <Navbar />
-        {children}
-      </body>
-    </html>
-  );
+    return (
+        <html
+            lang="en"
+            className={`${inter.variable} ${jetbrainsMono.variable} antialiased`}
+        >
+            <body>
+                <Navbar />
+                {children}
+            </body>
+        </html>
+    );
 }

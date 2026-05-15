@@ -18,6 +18,6 @@ export const skills: SkillCategory[] = [
   },
   {
     category: "CI/CD & Automation",
-    items: ["GitHub Actions", "Cloud Build", "ArgoCD"],
+    items: ["GitHub Actions", "Cloud Build"],
   },
 ];
