@@ -9,7 +9,7 @@ export function ProjectCard({
   liveUrl,
 }: Project) {
   return (
-    <div className="bg-surface border border-border rounded-lg p-6 hover:border-accent/30 transition-colors duration-300 flex flex-col">
+    <div className="bg-surface border-[0.5px] border-accent/50 hover:border-accent rounded-lg p-6 transition-colors duration-300 flex flex-col">
       <h3 className="font-mono text-accent text-sm font-semibold mb-3">
         {name}
       </h3>

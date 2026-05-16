@@ -9,7 +9,7 @@ export function Certifications() {
         {certifications.map((cert) => (
           <div
             key={cert.name}
-            className="bg-surface border border-border rounded-lg p-5 flex items-start justify-between"
+            className="bg-surface border-[0.5px] border-accent rounded-lg p-5 flex items-start justify-between"
           >
             <div className="min-w-0">
               <p className="font-mono text-sm text-foreground mb-1">
